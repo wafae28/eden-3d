@@ -406,3 +406,8 @@
     background-repeat: repeat-x;
 	animation: footerAnimatedBg 50s linear infinite;
 }
+.logo img{
+    display:block;
+    width:90px;
+    height:auto;
+  }

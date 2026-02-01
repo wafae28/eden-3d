@@ -127,7 +127,7 @@
     margin-right: 25px;
     padding: 40px 0;
     color: var(--bs-white);
-    font-size: 17px;
+    font-size: 22px;
     text-transform: uppercase;
     outline: none;
     transition: .5s;
@@ -174,6 +174,15 @@
       opacity: 1;
     }
   }
+  /* Taille normale des liens */
+.main-navbar .nav-link{
+  transition: font-size .25s ease;
+}
+
+/* Quand on scroll -> texte plus petit */
+.main-navbar.scrolled .nav-link{
+  font-size: 19px;
+}
   
   /* ===== DROPDOWN ITEMS = CLONE DES NAV-LINK ===== */
   .navbar .dropdown-menu .dropdown-item {
@@ -918,7 +927,8 @@ body.blog-page .page-header{
   background: linear-gradient(135deg, #9fd3b0, #6fb58a);
   box-shadow: 0 14px 30px rgba(0,0,0,.12);
 }
-#promoModal .btn
+
+
 
   
 

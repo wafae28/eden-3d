@@ -932,5 +932,31 @@ body.blog-page .page-header{
 
   
 
- 
+ /* BOUTON DECOUVRIR ACCUEIL */
+ .hero-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:14px 26px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+
+  color:#eaf3ea;
+  background: rgba(111,143,116,0.18);
+  border:2px #8FC7A4;
+  border-radius:0px;
+
+  text-decoration:none;
+  transition:all .25s ease;
+}
+
+.hero-btn:hover{
+  background: rgba(111,143,116,0.32);
+  transform: translateY(-2px);
+  color:#ffffff;
+}
+
   

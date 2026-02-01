@@ -844,5 +844,83 @@ body.blog-page .page-header{
   object-fit: contain;
 }
 
+/* =========================
+   EDEN3D - PROMO MODAL (CLEAN)
+   ========================= */
+
+/* 1) Taille + centrage */
+#promoModal .modal-dialog{
+  max-width: 820px;
+  margin: 1.75rem auto;
+}
+
+#promoModal .modal-content{
+  border: 0;
+  border-radius: 26px;
+  padding: 34px 42px;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(0,0,0,.35);
+}
+
+/* 2) Header + bouton X */
+#promoModal .modal-header{
+  padding: 0;
+  margin-bottom: 18px;
+  border: 0;
+}
+
+#promoModal .modal-title{
+  font-size: 14px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.45);
+  font-weight: 700;
+}
+
+#promoModal .btn-close{
+  opacity: .45;
+  transform: scale(1.15);
+  transition: opacity .2s ease, transform .2s ease;
+}
+#promoModal .btn-close:hover{
+  opacity: .9;
+  transform: scale(1.2);
+}
+
+/* 3) Texte (plus premium, plus lisible) */
+#promoModal .modal-body{
+  padding: 0;
+}
+
+#promoModal .modal-body p{
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(0,0,0,.68);
+  margin: 0 0 26px 0;
+}
+
+/* 4) Boutons (gros, arrondis, vibe design) */
+#promoModal .modal-body .d-flex{
+  gap: 14px !important;
+}
+
+#promoModal .btn{
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+
+/* Bouton principal */
+#promoModal .btn-primary{
+  border: 0;
+  background: linear-gradient(135deg, #9fd3b0, #6fb58a);
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+#promoModal .btn
+
+  
+
  
   

@@ -826,5 +826,23 @@ body.blog-page .page-header{
 
     background-size: cover;
 }
+
+/* nos partenaires logo */
+
+.partners {
+  display: flex;
+  justify-content: space-between; /* prend toute la largeur */
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.partners img {
+  height: 100px;       /* GROS logos */
+  width: auto;
+  object-fit: contain;
+}
+
  
   

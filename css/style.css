@@ -536,7 +536,7 @@
    ========================================= */
 
    .blog-section{
-    background: #ffffff;
+    background: #fffffff8;
   }
   
   /* Header */
@@ -609,7 +609,7 @@
     grid-template-columns: 1.45fr 1fr;
     background: #fff;
     border: 1px solid #e7ece6;
-    border-radius: 16px;
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 10px 24px rgba(0,0,0,0.06);
   }
@@ -672,7 +672,7 @@
   .blog-card{
     background: #fff;
     border: 1px solid #e7ece6;
-    border-radius: 14px;
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 10px 22px rgba(0,0,0,0.05);
     transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;

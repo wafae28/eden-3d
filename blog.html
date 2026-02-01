@@ -139,26 +139,26 @@
 
       <div class="col-lg-5 mt-3 mt-lg-0 wow fadeInUp" data-wow-delay="0.2s">
         <div class="blog-toolbar">
-          <input class="form-control blog-input" type="text" placeholder="Rechercher un article...">
-          <select class="form-select blog-input">
-            <option selected>Toutes les catégories</option>
-            <option>Aménagement</option>
-            <option>Design 3D</option>
-            <option>Matériaux</option>
-            <option>Entretien</option>
-          </select>
+          <input 
+            id="blogSearch"
+            class="form-control blog-input"
+            type="text"
+            placeholder="Rechercher un article...">
         </div>
+        
       </div>
     </div>
 
     <!-- Article vedette -->
     <div class="row mb-4">
       <div class="col-12">
-        <article class="blog-feature wow fadeInUp" data-wow-delay="0.1s">
+    
+        <article class="blog-feature blog-item wow fadeInUp" data-wow-delay="0.1s">
+    
           <a href="blogues/blog1.html" class="blog-feature-cover">
             <img src="img/blog1.webp" alt="Piscine et terrasse">
           </a>
-
+    
           <div class="blog-feature-content">
             <div class="blog-meta">
               <span class="blog-tag">Aménagement</span>
@@ -167,30 +167,32 @@
               <span>•</span>
               <span>3 fév 2026</span>
             </div>
-
+    
             <h3 class="blog-feature-title">
               Piscine et terrasse : concevoir un espace extérieur équilibré
             </h3>
-
+    
             <p class="blog-text">
               Disposition, circulation et matériaux : comment créer un ensemble harmonieux autour d’une piscine.
             </p>
-
+    
             <a href="blogues/blog1.html" class="blog-cta">Lire l’article</a>
           </div>
+    
         </article>
       </div>
     </div>
+    
 
     <!-- Grille -->
     <div class="row g-4">
 
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.1s">
         <article class="blog-card">
           <a href="blogues/blog2.html" class="blog-cover">
             <img src="img/blog2.webp" alt="Plan d’aménagement">
           </a>
-          <div class="blog-content">
+          <div class="blog-content blog-item">
             <div class="blog-meta">
               <span class="blog-tag">Design 3D</span>
               <span>•</span>
@@ -209,12 +211,12 @@
         </article>
       </div>
 
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.3s">
         <article class="blog-card">
           <a href="blogues/blog3.html" class="blog-cover">
             <img src="img/blog3.webp" alt="Rendu 3D de cour">
           </a>
-          <div class="blog-content">
+          <div class="blog-content blog-item">
             <div class="blog-meta">
               <span class="blog-tag">Aménagement</span>
               <span>•</span>
@@ -233,12 +235,12 @@
         </article>
       </div>
 
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
         <article class="blog-card">
           <a href="blogues/blog4.html" class="blog-cover">
             <img src="img/blog4.webp" alt="Pavillon moderne">
           </a>
-          <div class="blog-content">
+          <div class="blog-content blog-item">
             <div class="blog-meta">
               <span class="blog-tag">Matériaux</span>
               <span>•</span>
@@ -338,6 +340,24 @@
   });
   new WOW().init();
 </script>
-
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("blogSearch");
+    const items = document.querySelectorAll(".blog-item");
+  
+    if (!input) return;
+  
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+  
+      items.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+  });
+  </script>
+  
+  
 </body>
 </html>

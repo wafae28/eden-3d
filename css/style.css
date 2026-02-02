@@ -348,6 +348,11 @@
 .service-item .service-img {
     position: relative;
     display: inline-block;
+    
+}
+.service-item .service-img .img-fluid {
+  box-shadow: 0 0 35px #707471;
+  
 }
 
 
@@ -436,7 +441,10 @@
     opacity: 1;
     transition-delay: .2s;
 }
+.team-item{
+  box-shadow: 0 0 35px #262726;
 
+}
 
 /*** Testimonial ***/
 .testimonial-carousel {

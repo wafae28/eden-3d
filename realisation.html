@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="about.html" class="nav-item nav-link">Réalisations</a>
+                    <a href="realisation.html" class="nav-item nav-link">Réalisations</a>
                     <a href="processus.html" class="nav-item nav-link">Processus</a>
                 
                     <div class="nav-item dropdown">
@@ -66,7 +66,7 @@
                         <div class="dropdown-menu m-0">
                             <a href="team.html" class="dropdown-item">Nos Services</a>
                             <a href="blog.html" class="dropdown-item">Blog et Actualités</a>
-                            <a href="realisation.html" class="dropdown-item">Nos projets 3D</a>
+                            <a href="about.html" class="dropdown-item">Nos projets 3D</a>
                         </div>
                     </div>
                 
@@ -98,12 +98,42 @@
     </div>
     <!-- Header End -->
 
-rcg
+
     <!-- Start -->
     <div class="container-fluid py-5 bg-secondary">
-
+        <div class="text-center">
+            <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                <div class="title-center">
+                    <h5>realisation</h5>
+                    <h1>Nos Derniers Projets</h1>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="main-image">
+            <!-- Flèche gauche -->
+    <button class="arrow left" onclick="prevImage()">&#10094;</button>
+            <!-- Image principale -->
+              <img id="currentImage" src="img/img1.webp" alt="Galerie">
+             <!-- Flèche droite -->
+    <button class="arrow right" onclick="nextImage()">&#10095;</button>
+            </div>
+          
+            <!-- Miniatures -->
+            <div class="thumbnails">
+              <img src="img/img1.webp" onclick="changeImage(this)">
+              <img src="img/img2.webp" onclick="changeImage(this)">
+              <img src="img/img3.webp" onclick="changeImage(this)">
+              <img src="img/img4.webp" onclick="changeImage(this)">
+              <img src="img/img5.webp" onclick="changeImage(this)">
+              <img src="img/img6.webp" onclick="changeImage(this)">
+              <img src="img/img7.webp" onclick="changeImage(this)">
+            </div>
+          
+          </div>
+          
     </div>
-    <!-- Testimonial End -->
+    
 
 
 <!-- Footer Start -->
@@ -151,6 +181,56 @@ rcg
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        const images = [
+          "img/img1.webp",
+          "img/img2.webp",
+          "img/img3.webp",
+          "img/img4.webp",
+          "img/img5.webp",
+          "img/img6.webp",
+          "img/img7.webp"
+        ];
+        
+        let index = 0;
+        
+        const mainImage = document.getElementById("currentImage");
+        const thumbs = document.querySelectorAll(".thumbnails img");
+        
+        function showImage(i) {
+          index = (i + images.length) % images.length;
+          mainImage.src = images[index];
+          setActive(images[index]);
+        }
+        
+        function nextImage() {
+          showImage(index + 1);
+        }
+        
+        function prevImage() {
+          showImage(index - 1);
+        }
+        
+        function changeImage(element) {
+          showImage(images.indexOf(element.getAttribute("src")));
+        }
+        
+        function setActive(src) {
+          thumbs.forEach(img => {
+            img.classList.remove("active");
+            if (img.src.includes(src)) {
+              img.classList.add("active");
+            }
+          });
+        }
+        
+        /* Défilement auto */
+        setInterval(() => {
+          nextImage();
+        }, 4000);
+        </script>
+        
+        
 </body>
 
 </html>

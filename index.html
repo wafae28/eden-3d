@@ -55,32 +55,44 @@
                 data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="about.html" class="nav-item nav-link">À propos</a>
-                    <a href="processus.html" class="nav-item nav-link">Processus</a>
-                
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="team.html" class="dropdown-item">Nos Services</a>
-                            <a href="blog.html" class="dropdown-item">Blog et Actualités</a>
-                            <a href="realisation.html" class="dropdown-item">Nos Réalisations</a>
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+                    <div class="logo">
+                        <img src="img/logo2.png" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
+                    </div>
+                    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto p-4 p-lg-0">
+                            <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                            <a href="about.html" class="nav-item nav-link">Réalisations</a>
+                            <a href="processus.html" class="nav-item nav-link">Processus</a>
+                        
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="team.html" class="dropdown-item">Nos Services</a>
+                                    <a href="blog.html" class="dropdown-item">Blog et Actualités</a>
+                                    <a href="realisation.html" class="dropdown-item">Nos projet 3D</a>
+                                </div>
+                            </div>
+                        
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div> 
+        
+                        <div class="d-none d-lg-flex">
+                            <a href="contact.html" class="btn btn-soumission">
+                                SOUMISSION
+                            </a>
+                        </div>
+                        
                         </div>
                     </div>
-                
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div> 
-
-                <div class="d-none d-lg-flex">
-                    <a href="contact.html" class="btn btn-soumission">
-                        SOUMISSION
-                    </a>
-                </div>
-                
-                </div>
+                </nav>
             </div>
+            
         </nav>
 
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -120,21 +132,41 @@
                                 <h1>À propos de nous</h1>
                             </div>
                         </div>
-                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s"><strong>Imaginer, c’est bien. Voir avant de construire, c’est mieux.</strong><br>
-                            Chez Eden 3D, nous concevons des aménagements extérieurs en nous appuyant sur la visualisation 3D réaliste
-                             afin de transformer une idée en projet clair, mesurable et réalisable. Notre rôle est de faire le lien entre 
-                             l’inspiration et la construction, en éliminant l’incertitude dès le départ.</p>
-                        <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Visualisez votre projet en 3D avant sa réalisation.
-                            </li>
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Un design sur mesure adapté à votre espace et à votre mode de vie.
-                            </li>
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Une planification claire pour une exécution sans surprises.
-                            </li>
-                        </ul>
+                        <div class="eden-about-text wow fadeInUp" data-wow-delay="0.2s">
+
+                            <h4 class="eden-about-tagline">
+                                Imaginer, c’est bien. <span>Voir avant de construire, c’est mieux.</span>
+                            </h4>
+                        
+                            <p class="eden-about-desc">
+                                Chez Eden 3D, nous concevons des aménagements extérieurs en nous appuyant sur la
+                                visualisation 3D réaliste afin de transformer une idée en projet clair, mesurable
+                                et réalisable. Notre rôle est de faire le lien entre l’inspiration et la construction,
+                                en éliminant l’incertitude dès le départ.
+                            </p>
+                        
+                        </div>
+                        
+
+                             <div class="eden-benefits mb-5 wow fadeInUp" data-wow-delay="0.3s">
+
+                                <div class="eden-benefit-item">
+                                    <i class="fa fa-check"></i>
+                                    <span>Visualisez votre projet en 3D avant sa réalisation.</span>
+                                </div>
+                            
+                                <div class="eden-benefit-item">
+                                    <i class="fa fa-check"></i>
+                                    <span>Un design sur mesure adapté à votre espace et à votre mode de vie.</span>
+                                </div>
+                            
+                                <div class="eden-benefit-item">
+                                    <i class="fa fa-check"></i>
+                                    <span>Une planification claire pour une exécution sans surprises.</span>
+                                </div>
+                            
+                            </div>
+                            
                         <div class="row wow fadeInUp" data-wow-delay="0.4s">
                             <div class="col-6">
                                 <a href="contact.html" class="btn btn-outline-primary border-2 py-3 w-100">Nous contacter</a>
@@ -589,7 +621,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top eden-backtotop"><i class="bi bi-arrow-up"></i></a>
 
 <!-- Promo Popup -->
 <div class="modal fade" id="promoModal" tabindex="-1">

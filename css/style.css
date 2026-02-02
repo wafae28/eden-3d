@@ -1,3 +1,4 @@
+
 /********** Template CSS **********/
 
 .back-to-top {
@@ -29,7 +30,7 @@
 .btn {
     font-weight: 600;
     transition: .3s ease;
-    border-radius: 50px; /* boutons normaux arrondis */
+    border-radius: 5px; /* boutons normaux arrondis */
 }
 
 /* Bouton Soumission (carré) */
@@ -43,7 +44,7 @@
     background: transparent;
     border: 1px solid #9BC7A5;
   
-    border-radius: 50px;     /* simple arrondi */
+    border-radius: 5px;     /* simple arrondi */
     box-shadow: none;        /* pas de glow */
   }
   
@@ -110,6 +111,10 @@
 
 .btn-primary {
     color: var(--bs-white);
+}
+.eden-backtotop {
+  border-radius: 50px; 
+  
 }
 
 
@@ -968,3 +973,65 @@ body.blog-page .page-header{
 }
 
   
+/* ===============================
+   EDEN ABOUT – BULLETS PREMIUM
+================================*/
+
+.eden-benefits{
+  display: grid;
+  gap: 14px;
+}
+
+.eden-benefit-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 18px;
+  border-radius: 2px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  font-size: 15px;
+  color: #eeeaea;
+
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.eden-benefit-item i{
+  color: #8FC7A4;;
+  font-size: 14px;
+}
+
+.eden-benefit-item:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.4);
+}
+
+/* ===============================
+   EDEN ABOUT – TEXTE PREMIUM
+================================*/
+
+.eden-about-text{
+  max-width: 800px;
+}
+
+.eden-about-tagline{
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.eden-about-tagline span{
+  color: #9BC7A5;
+}
+
+.eden-about-desc{
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.78);
+}
+

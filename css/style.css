@@ -1064,7 +1064,7 @@ body.blog-page .page-header{
   height: 500px;
   object-fit: cover;
   border-radius: 0px;
-  box-shadow: 0 0 35px #707471;
+  box-shadow: 0 0 13px #707471;
 }
 
 /* Miniatures */
@@ -1126,4 +1126,10 @@ body.blog-page .page-header{
 
 .arrow.left{ left: 14px; }
 .arrow.right{ right: 14px; }
+
+/* ---- maps -----*/
+iframe {
+  pointer-events: none;
+}
+
 

@@ -1046,7 +1046,7 @@ body.blog-page .page-header{
 
 /*---------------- REALISATION IMAGE ---------*/
 .gallery-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1061,7 +1061,7 @@ body.blog-page .page-header{
 .main-image img {
   width: 90%;
   margin: 0 auto;
-  height: 500px;
+  height: 730px;
   object-fit: cover;
   border-radius: 0px;
   box-shadow: 0 0 13px #707471;

@@ -360,13 +360,14 @@ a.back-to-top.btn {
 }
 
 .service-item .service-img {
-    position: relative;
-    display: inline-block;
-    
+  position: relative;
+  display: flex;              /* ⬅️ remplace inline-block */
+  justify-content: center;    /* centre horizontal */
+  align-items: center;        /* centre vertical */
 }
-.service-item .service-img .img-fluid {
-  box-shadow: 0 0 35px #707471;
-  
+.service-item .service-img img {
+  width: 200px;
+  height: auto;
 }
 
 

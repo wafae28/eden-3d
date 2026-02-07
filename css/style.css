@@ -1408,3 +1408,7 @@ iframe {
     word-break: break-word;
   }
 }
+
+body.blog-page .navbar{
+  background: rgba(0,0,0,0.92) !important;
+}

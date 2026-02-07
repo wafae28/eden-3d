@@ -2,53 +2,35 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Piscine et terrasse - Eden 3D</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Favicon -->
-  <link href="../img/eden.png" rel="icon">
+  <link href="../img/eden.png" rel="icon" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"">
+  <!-- Google Fonts (✅ corrigé) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
 
   <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- Libraries -->
-  <link href="../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
   <!-- Bootstrap -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Main CSS -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" />
 </head>
-
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- WOW + Easing + Waypoints (obligatoire pour wow fadeInUp) -->
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-
-  <script>
-    // Spinner hide
-    window.addEventListener("load", () => {
-      const sp = document.getElementById("spinner");
-      if (sp) sp.classList.remove("show");
-    });
-
-    // Init WOW animations
-    new WOW().init();
-  </script>
 
 <body class="blog-page">
 
@@ -67,218 +49,205 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
       <div class="logo">
-        <a href="index.html">
-            <img src="img/logo2.png" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
+        
+        <a href="../index.html">
+          <img src="../img/logo2.png" alt="ÉDEN 3D QUÉBEC" width="120" height="120" />
         </a>
-    </div>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav mx-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Accueil</a>
-          <a href="realisation.html" class="nav-item nav-link">Réalisations</a>
-          <a href="processus.html" class="nav-item nav-link">Processus</a>
-      
-          <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-              <div class="dropdown-menu m-0">
-                  <a href="team.html" class="dropdown-item">Nos Services</a>
-                  <a href="blog.html" class="dropdown-item">Blog et Actualités</a>
-              </div>
-          </div>
-      
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
       </div>
 
-            <div class="d-none d-lg-flex">
-                <a href="contact.html" class="btn btn-soumission">
-                    SOUMISSION
-                </a>
+      <button class="navbar-toggler me-4" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+          <a href="../index.html" class="nav-item nav-link">Accueil</a>
+          <a href="../realisation.html" class="nav-item nav-link">Réalisations</a>
+          <a href="../processus.html" class="nav-item nav-link">Processus</a>
+
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+            <div class="dropdown-menu m-0">
+              <a href="../team.html" class="dropdown-item">Nos Services</a>
+              <a href="../blog.html" class="dropdown-item active">Blog et Actualités</a>
             </div>
-            
-            </div>
+          </div>
+
+          <a href="../contact.html" class="nav-item nav-link">Contact</a>
         </div>
+
+        <div class="d-none d-lg-flex">
+          <a href="../contact.html" class="btn btn-soumission">SOUMISSION</a>
+        </div>
+
+      </div>
     </nav>
 
     <!-- Page Header -->
     <div class="blog">
       <div class="container text-center py-5">
-          <h1 class="display-4 text-white text-uppercase mb-3 animated slideInDown">
-              Blog et actualités
-          </h1>
-      </div>
-      <nav aria-label="breadcrumb animated slideInDown">
-        <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-            <li class="breadcrumb-item"><a class="text-white" href="index.html">Accueil</a></li>
-            <li class="breadcrumb-item"><a class="text-white" href="#" >Pages</a></li>
+        <h1 class="display-4 text-white text-uppercase mb-3 animated slideInDown">
+          Blog et actualités
+        </h1>
+
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+            <li class="breadcrumb-item"><a class="text-white" href="../index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><span class="text-white">Pages</span></li>
             <li class="breadcrumb-item text-primary active" aria-current="page">Blog et actualités</li>
-        </ol>
-    </nav>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
   </div>
-  
   <!-- Header End -->
 
 
- <!-- Blog Start -->
-<div class="container-fluid py-5 blog-section">
-  <div class="container py-5">
+  <!-- Blog Start -->
+  <div class="container-fluid py-5 blog-section">
+    <div class="container py-5">
 
-    <div class="row align-items-end mb-4">
-      <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="title wow fadeInUp" data-wow-delay="0.1s">
-          <div class="title-left">
-            <h5>Espace Conseils</h5>
-            <h1>Inspirations Extérieures</h1>
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="title wow fadeInUp" data-wow-delay="0.1s">
+            <div class="title-left">
+              <h5>Espace Conseils</h5>
+              <h1>Inspirations Extérieures</h1>
+            </div>
+          </div>
+          <p class="blog-lead mb-0">
+            Conseils, inspirations et tendances pour un aménagement extérieur élégant, durable et facile à entretenir.
+          </p>
+        </div>
+
+        <div class="col-lg-5 mt-3 mt-lg-0 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="blog-toolbar">
+            <input id="blogSearch" class="form-control blog-input" type="text"
+              placeholder="Rechercher un article..." />
           </div>
         </div>
-        <p class="blog-lead mb-0">
-          Conseils, inspirations et tendances pour un aménagement extérieur élégant, durable et facile à entretenir.
-        </p>
       </div>
 
-      <div class="col-lg-5 mt-3 mt-lg-0 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="blog-toolbar">
-          <input 
-            id="blogSearch"
-            class="form-control blog-input"
-            type="text"
-            placeholder="Rechercher un article...">
+      <!-- Article vedette -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <article class="blog-feature blog-item wow fadeInUp" data-wow-delay="0.1s">
+            <a href="../blogues/blog1.html" class="blog-feature-cover">
+              <img src="../img/blog1.webp" alt="plan 3D d'une Piscine et terrasse" />
+            </a>
+
+            <div class="blog-feature-content">
+              <div class="blog-meta">
+                <span class="blog-tag">Aménagement</span>
+                <span>•</span>
+                <span>7 min</span>
+                <span>•</span>
+                <span>3 fév 2026</span>
+              </div>
+
+              <h3 class="blog-feature-title">
+                Piscine et terrasse : concevoir un espace extérieur équilibré
+              </h3>
+
+              <p class="blog-text">
+                Disposition, circulation et matériaux : comment créer un ensemble harmonieux autour d’une piscine.
+              </p>
+
+              <a href="../blogues/blog1.html" class="blog-cta">Lire l’article</a>
+            </div>
+          </article>
         </div>
-        
-      </div>
-    </div>
-
-    <!-- Article vedette -->
-    <div class="row mb-4">
-      <div class="col-12">
-    
-        <article class="blog-feature blog-item wow fadeInUp" data-wow-delay="0.1s">
-    
-          <a href="blogues/blog1.html" class="blog-feature-cover">
-            <img src="img/blog1.webp" alt="plan 3D d'une Piscine et terrasse">
-          </a>
-    
-          <div class="blog-feature-content">
-            <div class="blog-meta">
-              <span class="blog-tag">Aménagement</span>
-              <span>•</span>
-              <span>7 min</span>
-              <span>•</span>
-              <span>3 fév 2026</span>
-            </div>
-    
-            <h3 class="blog-feature-title">
-              Piscine et terrasse : concevoir un espace extérieur équilibré
-            </h3>
-    
-            <p class="blog-text">
-              Disposition, circulation et matériaux : comment créer un ensemble harmonieux autour d’une piscine.
-            </p>
-    
-            <a href="blogues/blog1.html" class="blog-cta">Lire l’article</a>
-          </div>
-    
-        </article>
-      </div>
-    </div>
-    
-
-    <!-- Grille -->
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.1s">
-        <article class="blog-card">
-          <a href="blogues/blog2.html" class="blog-cover">
-            <img src="img/blog2.webp" alt="Plan d’aménagement 2D d'une maison et cours exterieur">
-          </a>
-          <div class="blog-content blog-item">
-            <div class="blog-meta">
-              <span class="blog-tag">Design 3D</span>
-              <span>•</span>
-              <span>4 min</span>
-              <span>•</span>
-              <span>31 jan 2026</span>
-            </div>
-            <h3 class="blog-title">
-              Plan d’aménagement : de l’idée au plan détaillé
-            </h3>
-            <p class="blog-text">
-              Comprendre comment un plan structuré facilite les travaux et évite les mauvaises surprises.
-            </p>
-            <a href="blogues/blog2.html" class="blog-cta">Lire l’article</a>
-          </div>
-        </article>
       </div>
 
-      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.3s">
-        <article class="blog-card">
-          <a href="blogues/blog3.html" class="blog-cover">
-            <img src="img/blog3.webp" alt="Rendu 3D d'une cour">
-          </a>
-          <div class="blog-content blog-item">
-            <div class="blog-meta">
-              <span class="blog-tag">Aménagement</span>
-              <span>•</span>
-              <span>5 min</span>
-              <span>•</span>
-              <span>20 jan 2026</span>
+      <!-- Grille -->
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.1s">
+          <article class="blog-card">
+            <a href="../blogues/blog2.html" class="blog-cover">
+              <img src="../img/blog2.webp" alt="Plan d’aménagement 2D d'une maison et cours exterieur" />
+            </a>
+            <div class="blog-content blog-item">
+              <div class="blog-meta">
+                <span class="blog-tag">Design 3D</span>
+                <span>•</span>
+                <span>4 min</span>
+                <span>•</span>
+                <span>31 jan 2026</span>
+              </div>
+              <h3 class="blog-title">Plan d’aménagement : de l’idée au plan détaillé</h3>
+              <p class="blog-text">
+                Comprendre comment un plan structuré facilite les travaux et évite les mauvaises surprises.
+              </p>
+              <a href="../blogues/blog2.html" class="blog-cta">Lire l’article</a>
             </div>
-            <h3 class="blog-title">
-              Transformer sa cour grâce au design 3D
-            </h3>
-            <p class="blog-text">
-              Visualisez votre projet avant construction et optimisez chaque zone de vie extérieure.
-            </p>
-            <a href="blogues/blog3.html" class="blog-cta">Lire l’article</a>
-          </div>
-        </article>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.3s">
+          <article class="blog-card">
+            <a href="../blogues/blog3.html" class="blog-cover">
+              <img src="../img/blog3.webp" alt="Rendu 3D d'une cour" />
+            </a>
+            <div class="blog-content blog-item">
+              <div class="blog-meta">
+                <span class="blog-tag">Aménagement</span>
+                <span>•</span>
+                <span>5 min</span>
+                <span>•</span>
+                <span>20 jan 2026</span>
+              </div>
+              <h3 class="blog-title">Transformer sa cour grâce au design 3D</h3>
+              <p class="blog-text">
+                Visualisez votre projet avant construction et optimisez chaque zone de vie extérieure.
+              </p>
+              <a href="../blogues/blog3.html" class="blog-cta">Lire l’article</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
+          <article class="blog-card">
+            <a href="../blogues/blog4.html" class="blog-cover">
+              <img src="../img/blog4.webp" alt="photo de pavillon et cabanon moderne" />
+            </a>
+            <div class="blog-content blog-item">
+              <div class="blog-meta">
+                <span class="blog-tag">Matériaux</span>
+                <span>•</span>
+                <span>6 min</span>
+                <span>•</span>
+                <span>10 jan 2026</span>
+              </div>
+              <h3 class="blog-title">Pavillon et cabanon : allier style et fonctionnalité</h3>
+              <p class="blog-text">
+                Des structures modernes qui ajoutent du rangement et un espace de détente à votre cour.
+              </p>
+              <a href="../blogues/blog4.html" class="blog-cta">Lire l’article</a>
+            </div>
+          </article>
+        </div>
+
       </div>
 
-      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
-        <article class="blog-card">
-          <a href="blogues/blog4.html" class="blog-cover">
-            <img src="img/blog4.webp" alt="photo de pavillon et cabanon moderne">
-          </a>
-          <div class="blog-content blog-item">
-            <div class="blog-meta">
-              <span class="blog-tag">Matériaux</span>
-              <span>•</span>
-              <span>6 min</span>
-              <span>•</span>
-              <span>10 jan 2026</span>
-            </div>
-            <h3 class="blog-title">
-              Pavillon et cabanon : allier style et fonctionnalité
-            </h3>
-            <p class="blog-text">
-              Des structures modernes qui ajoutent du rangement et un espace de détente à votre cour.
-            </p>
-            <a href="blogues/blog4.html" class="blog-cta">Lire l’article</a>
-          </div>
-        </article>
+      <!-- Pagination -->
+      <div class="d-flex justify-content-center mt-5">
+        <nav aria-label="Pagination blog">
+          <ul class="pagination blog-pagination mb-0">
+            <li class="page-item disabled"><a class="page-link" href="#">Précédent</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="../blog2page.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="../blog2page.html">Suivant</a></li>
+          </ul>
+        </nav>
       </div>
 
     </div>
-    <!-- Pagination -->
-<div class="d-flex justify-content-center mt-5">
-  <nav aria-label="Pagination blog">
-    <ul class="pagination blog-pagination mb-0">
-      <li class="page-item disabled"><a class="page-link" href="#">Précédent</a></li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="blog2page.html">2</a></li>
-      <li class="page-item"><a class="page-link" href="blog2page.html">Suivant</a></li>
-    </ul>
-  </nav>
-</div>
-
-
   </div>
-</div>
-<!-- Blog End -->
-
-
-      
   <!-- Blog End -->
 
 
@@ -286,77 +255,64 @@
   <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center py-5">
 
-      <a href="index.html">
-        <img src="img/logo2.png" alt="Eden 3D Logo" class="footer-logo mb-3">
+      <a href="../index.html">
+        <img src="../img/logo2.png" alt="Eden 3D Logo" class="footer-logo mb-3" />
       </a>
 
       <div class="d-flex justify-content-center mb-4 footer-social">
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.facebook.com/p/Eden-3D-Québec-100064279023862/?locale=fr_FR"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.youtube.com/@eden3dquebec943">
-            <i class="fab fa-youtube"></i>
-        </a>
-        
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/eden3dquebec/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-lg-square btn-outline-primary border-2 m-1"
+          href="https://www.facebook.com/p/Eden-3D-Québec-100064279023862/?locale=fr_FR"><i
+            class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-lg-square btn-outline-primary border-2 m-1"
+          href="https://www.youtube.com/@eden3dquebec943"><i class="fab fa-youtube"></i></a>
+        <a class="btn btn-lg-square btn-outline-primary border-2 m-1"
+          href="https://www.instagram.com/eden3dquebec/?hl=en"><i class="fab fa-instagram"></i></a>
       </div>
-      
-        
 
-    <p>&copy; <a class="border-bottom" href="#">Eden 3D</a>, Tous droits réservés.</p>
+      <p>&copy; <a class="border-bottom" href="#">Eden 3D</a>, Tous droits réservés.</p>
 
     </div>
   </div>
   <!-- Footer End -->
 
-
   <!-- Back to Top -->
   <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- JS (✅ une seule fois, à la fin) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Template Javascript -->
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+
   <script>
     // Spinner hide
     window.addEventListener("load", () => {
       const sp = document.getElementById("spinner");
       if (sp) sp.classList.remove("show");
     });
-  </script>
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="../lib/wow/wow.min.js"></script>
-<script src="../lib/easing/easing.min.js"></script>
-<script src="../lib/waypoints/waypoints.min.js"></script>
+    // Init WOW animations
+    new WOW().init();
 
-<script>
-  window.addEventListener("load", () => {
-    const sp = document.getElementById("spinner");
-    if (sp) sp.classList.remove("show");
-  });
-  new WOW().init();
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const input = document.getElementById("blogSearch");
-    const items = document.querySelectorAll(".blog-item");
-  
-    if (!input) return;
-  
-    input.addEventListener("input", () => {
-      const q = input.value.trim().toLowerCase();
-  
-      items.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        card.style.display = text.includes(q) ? "" : "none";
+    // Search blog
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("blogSearch");
+      const items = document.querySelectorAll(".blog-item");
+      if (!input) return;
+
+      input.addEventListener("input", () => {
+        const q = input.value.trim().toLowerCase();
+        items.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(q) ? "" : "none";
+        });
       });
     });
-  });
   </script>
   
-  
+
 </body>
+
 </html>

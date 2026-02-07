@@ -1176,3 +1176,141 @@ iframe {
 
   margin-top: 40px;   /* descend l’image */
 }
+
+
+/* code ajouté pour affichage iphone */
+/* =========================
+   MOBILE FIX — HERO + NAV
+   Colle à la FIN
+========================= */
+
+@media (max-width: 768px){
+
+  /* NAV : enlève le padding énorme */
+  .navbar .navbar-nav .nav-link{
+    padding: 10px 0 !important;
+    font-size: 18px !important;
+  }
+
+  /* Le hero (carousel caption) doit respirer */
+  .carousel-caption{
+    padding: 90px 16px 28px !important; /* espace pour le header */
+  }
+
+  /* Ton title a un margin-top négatif -> ça casse sur téléphone */
+  .carousel-caption .title{
+    margin-top: 0 !important;
+  }
+
+  /* H1 responsive (au lieu d’être gigantesque) */
+  .carousel-caption h1{
+    font-size: clamp(34px, 10vw, 56px) !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Texte sous le titre : largeur + taille */
+  .carousel-caption p{
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    max-width: 34ch;
+    margin: 12px auto 18px !important;
+  }
+
+  /* Bouton hero : qu’il “fit” */
+  .hero-btn{
+    width: min(280px, 100%);
+    justify-content: center;
+    padding: 14px 18px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .logo img,
+  .footer-logo{
+    width: min(220px, 70vw) !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px){
+  .partners{
+    flex-wrap: wrap;      /* au lieu de forcer 1 ligne */
+    gap: 18px;
+    margin-top: 30px;
+  }
+  .partners img{
+    height: 90px !important; /* sinon ça explose */
+  }
+}
+
+@media (max-width: 768px){
+  .cert-badge{
+    width: 80px !important;
+    bottom: 12px !important;
+    right: 12px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .gallery-container{ width: 100%; }
+
+  .main-image{
+    width: 100% !important;
+  }
+
+  .main-image img{
+    width: 100% !important;
+    height: auto !important;        /* ✅ fini le 730px */
+    aspect-ratio: 4 / 3;            /* garde une belle forme */
+    object-fit: cover;
+  }
+
+  .thumbnails{
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .thumbnails img{
+    width: 72px;
+    height: 56px;
+  }
+
+  /* flèches visibles sans hover (car sur mobile y’a pas hover) */
+  .arrow{
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 768px){
+  .back-to-top{
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+}
+/* FIX DROPDOWN BLANC (MOBILE) */
+@media (max-width: 991.98px){
+
+  /* le panneau dropdown */
+  .navbar .dropdown-menu{
+    background: rgba(0,0,0,0.65) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 14px !important;
+    padding: 10px 12px !important;
+    margin-top: 10px !important;
+    backdrop-filter: blur(10px);
+  }
+
+  /* items */
+  .navbar .dropdown-menu .dropdown-item{
+    color: #fff !important;
+    background: transparent !important;
+    padding: 10px 12px !important;
+    border-radius: 10px;
+  }
+
+  .navbar .dropdown-menu .dropdown-item:hover,
+  .navbar .dropdown-menu .dropdown-item:focus{
+    background: rgba(255,255,255,0.08) !important;
+    color: #9BC7A5 !important;
+  }
+}

@@ -1044,6 +1044,38 @@ body.blog-page .page-header{
   line-height: 1.75;
   color: rgba(255,255,255,0.78);
 }
+/* ===============================
+   BADGE CERTIFICATION ABOUT
+================================*/
+
+.bg-secondary {
+  position: relative;
+}
+
+.cert-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 200px;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 14px rgba(0,0,0,0.6));
+  z-index: 5;
+  transition: transform .3s ease;
+}
+
+.cert-badge:hover {
+  transform: scale(1.1);
+}
+
+/* mobile */
+@media (max-width: 992px) {
+  .cert-badge {
+    width: 85px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
 
 /*---------------- REALISATION IMAGE ---------*/
 .gallery-container {

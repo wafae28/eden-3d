@@ -1133,4 +1133,14 @@ iframe {
   pointer-events: none;
 }
 
+/* TECHO PRO */
+.techopro-img {
+  max-width: 180px;   /* taille de l’image */
+  width: 100%;
+  display: block;
 
+  margin-left: auto;  /* droite */
+  margin-right: 0;
+
+  margin-top: 40px;   /* descend l’image */
+}

@@ -159,7 +159,7 @@
       <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.1s">
         <article class="blog-card">
           <a href="blogues/blog5.html" class="blog-cover">
-            <img src="img/1.png" alt="Plan d’aménagement">
+            <img src="img/1.webp" alt="Plan d’aménagement">
           </a>
           <div class="blog-content blog-item">
             <div class="blog-meta">
@@ -185,34 +185,11 @@
         </article>
       </div>
 
+
       <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.3s">
         <article class="blog-card">
-          <a href="blogues/blog6.html" class="blog-cover">
-            <img src="img/2.png" alt="Rendu 3D de cour">
-          </a>
-          <div class="blog-content blog-item">
-            <div class="blog-meta">
-              <span class="blog-tag">Aménagement</span>
-              <span>•</span>
-              <span>5 min</span>
-              <span>•</span>
-              <span>20 jan 2026</span>
-            </div>
-            <h3 class="blog-title">
-              Transformer sa cour grâce au design 3D
-            </h3>
-            <p class="blog-text">
-              Visualisez votre projet avant construction et optimisez chaque zone de vie extérieure.
-            </p>
-            <a href="blogues/blog6.html" class="blog-cta">Lire l’article</a>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
-        <article class="blog-card">
           <a href="blogues/blog4.html" class="blog-cover">
-            <img src="img/.webp" alt="Conception 3D aménagement extérieur">
+            <img src="img/2.webp" alt="Conception 3D aménagement extérieur">
           </a>
           <div class="blog-content blog-item">
             <div class="blog-meta">
@@ -237,10 +214,10 @@
         </article>
       </div>
 
-      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.7s">
+      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
         <article class="blog-card">
           <a href="blogues/blog7.html" class="blog-cover">
-            <img src="img/2.png" alt="Planification stratégique et budget">
+            <img src="img/3.webp" alt="Planification stratégique et budget">
           </a>
       
           <div class="blog-content blog-item">
@@ -264,6 +241,35 @@
           </div>
         </article>
       </div>
+      <div class="col-md-6 col-lg-4 blog-item wow fadeInUp" data-wow-delay="0.5s">
+        <article class="blog-card">
+          <a href="blogues/blog8.html" class="blog-cover">
+            <img src="img/4.webp" alt="Réalisation clé en main et livraison finale">
+          </a>
+      
+          <div class="blog-content blog-item">
+            <div class="blog-meta">
+              <span class="blog-tag">Réalisation</span>
+              <span>•</span>
+              <span>4 min</span>
+              <span>•</span>
+              <span>4 fév 2026</span>
+            </div>
+      
+            <h3 class="blog-title">
+              Réalisation clé en main & livraison finale
+            </h3>
+      
+            <p class="blog-text">
+              Exécution complète du projet, coordination des travaux, finitions soignées
+              et livraison d’un aménagement prêt à profiter.
+            </p>
+      
+            <a href="blogues/blog8.html" class="blog-cta">Lire l’article</a>
+          </div>
+        </article>
+      </div>
+      
       
       
 
@@ -363,6 +369,24 @@
       });
     });
   });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("blogSearch");
+      const items = document.querySelectorAll(".blog-item");
+  
+      if (!input) return;
+  
+      input.addEventListener("input", () => {
+        const q = input.value.trim().toLowerCase();
+  
+        items.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(q) ? "" : "none";
+        });
+      });
+    });
   </script>
   
   

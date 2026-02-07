@@ -1353,3 +1353,58 @@ iframe {
     padding-top: 120px !important; /* au lieu de 200px */
   }
 }
+/* =========================
+   QUAND LE MENU MOBILE EST OUVERT : STOP SUPERPOSITION
+========================= */
+@media (max-width: 991.98px){
+
+  /* Mets le menu comme un overlay qui couvre TOUT */
+  .navbar-collapse{
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top) + 70px);
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+
+    background: rgba(0,0,0,0.92) !important;
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 18px;
+
+    padding: 18px 16px;
+    overflow-y: auto;
+    z-index: 99999 !important;
+  }
+
+  /* Le header de page passe derrière */
+  .page-header{
+    position: relative;
+    z-index: 1 !important;
+  }
+
+  /* Quand le menu est ouvert, on “fade” le contenu derrière */
+  .navbar-collapse.show ~ *{
+    opacity: 0.15;
+    filter: blur(2px);
+    pointer-events: none;
+    transition: .15s ease;
+  }
+}
+@media (max-width: 991.98px){
+  .navbar-collapse{
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top) + 70px);
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    background: rgba(0,0,0,0.92) !important;
+    z-index: 99999 !important;
+  }
+}
+@media (max-width: 768px){
+  .page-header h1{
+    font-size: clamp(28px, 9vw, 44px) !important;
+    line-height: 1.05 !important;
+    word-break: break-word;
+  }
+}

@@ -1314,3 +1314,42 @@ iframe {
     color: #9BC7A5 !important;
   }
 }
+/* =========================
+   FIX SUPERPOSITION MENU / HEADER (MOBILE)
+========================= */
+@media (max-width: 991.98px){
+
+  /* 1) La navbar doit être au-dessus de tout */
+  .navbar{
+    position: fixed !important;
+    top: 0; left: 0; right: 0;
+    z-index: 9999 !important;
+  }
+
+  /* 2) Le panneau du menu mobile (collapse) doit avoir un fond */
+  .navbar-collapse{
+    background: rgba(0,0,0,0.85) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 18px;
+
+    padding: 14px 16px;
+    margin-top: 12px;
+
+    max-height: calc(100svh - 90px);
+    overflow-y: auto;
+  }
+
+  /* 3) Le dropdown dans le menu mobile (PAGES) */
+  .navbar .dropdown-menu{
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 14px !important;
+    padding: 10px 10px !important;
+  }
+
+  /* 4) Le header de page (BLOG ET ACTUALITÉS) doit descendre sous la navbar */
+  .page-header{
+    padding-top: 120px !important; /* au lieu de 200px */
+  }
+}

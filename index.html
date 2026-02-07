@@ -49,8 +49,11 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-lg-5 main-navbar">
             <div class="logo">
-                <img src="img/logo2.png" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
+                <a href="index.html">
+                    <img src="img/logo2.png" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
+                </a>
             </div>
+            
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -567,16 +570,6 @@
 </div>
 <!-- Testimonial End -->
 
-<!-- Promo Top Bar -->
-<div id="promoBar" class="promo-bar d-none">
-    <div class="promo-bar-inner">
-      <span><strong>-15%</strong> sur votre conception 3D ce mois-ci 🔥</span>
-      <a href="contact.html" class="promo-bar-btn">Profiter</a>
-      <button id="promoBarClose" class="promo-bar-close">×</button>
-    </div>
-  </div>
-  
-
 
   
 
@@ -612,29 +605,7 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-<!-- Promo Popup -->
-<div class="modal fade" id="promoModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content rounded-4">
-        <div class="modal-header border-0">
-          <h5 class="modal-title text-uppercase">Promo ÉDEN 3D</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <div class="modal-body pt-0">
-          <p>
-            <strong>-15%</strong> sur votre conception 3D ce mois-ci.<br>
-            Consultation + rendu 3D + plan d’aménagement.
-          </p>
-  
-          <div class="d-flex gap-2">
-            <a href="contact.html" class="btn btn-primary w-100">Profiter</a>
-            <button id="laterBtn" class="btn btn-outline-secondary w-100">Plus tard</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -647,73 +618,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Promo Top Bar -->
-<script>
-    (function () {
-      const modalEl = document.getElementById("promoModal");
-      const promoBar = document.getElementById("promoBar");
-      const promoBarClose = document.getElementById("promoBarClose");
-      const laterBtn = document.getElementById("laterBtn");
-    
-      const KEY_STATE = "eden3d_promo_state";
-      const state = localStorage.getItem(KEY_STATE);
-    
-      function showBar() {
-        promoBar.classList.remove("d-none");
-        document.body.classList.add("promo-bar-on");
-      }
-    
-      function hideBar() {
-        promoBar.classList.add("d-none");
-        document.body.classList.remove("promo-bar-on");
-      }
-    
-      function setState(s) {
-        localStorage.setItem(KEY_STATE, s);
-      }
-    
-      if (state === "bar") {
-        showBar();
-      } else if (state === "hidden") {
-        hideBar();
-      } else {
-        if (modalEl && window.bootstrap) {
-          const promoModal = new bootstrap.Modal(modalEl, { backdrop: "static" });
-          promoModal.show();
-    
-          modalEl.addEventListener("hidden.bs.modal", function () {
-            showBar();
-            setState("bar");
-          });
-        }
-      }
-    
-      if (laterBtn && modalEl && window.bootstrap) {
-        laterBtn.addEventListener("click", () => {
-          bootstrap.Modal.getInstance(modalEl).hide();
-        });
-      }
-    
-      if (promoBarClose) {
-        promoBarClose.addEventListener("click", () => {
-          hideBar();
-          setState("hidden");
-        });
-      }
-    })();
-    </script>
-  
-  <script>
-    const nav = document.querySelector(".main-navbar");
-    
-    window.addEventListener("scroll", () => {
-      if(window.scrollY > 50){
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
-    });
-    </script>
+   
     
     
 

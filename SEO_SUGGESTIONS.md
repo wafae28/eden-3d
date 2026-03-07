@@ -59,7 +59,7 @@ Ce document résume les améliorations SEO déjà appliquées et des recommandat
   - Servir les images en **WebP** (déjà le cas) et définir des **srcset** pour le responsive si besoin.
   - Si le site est hébergé avec HTTPS, activer la **compression GZIP/Brotli** côté serveur.
 
-### Fichiers d’images – noms
+### Fichiers d’images – noms *(appliqué)*
 - Les noms actuels (**img1.webp**, **1.webp**, **2.webp**, etc.) sont peu parlants pour le SEO. À long terme, renommer par thème (ex. **realisation-pave-uni-1.webp**, **processus-consultation-terrain.webp**) en mettant à jour les références dans le HTML.
 
 ---

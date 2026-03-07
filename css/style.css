@@ -223,7 +223,7 @@ a.back-to-top.btn {
     background: transparent;
   }
   
-  /* Flèche du menu Pages */
+  /* Flèche du menu Expertise */
   .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -518,7 +518,7 @@ a.back-to-top.btn {
 }
 
 .footer {
-	background-image: url(../img/footer-bg5.png);
+	background-image: url(../img/footer-bg5.webp);
 	background-position: 0px 0px;
     background-repeat: repeat-x;
 	animation: footerAnimatedBg 15s linear infinite;
@@ -854,7 +854,7 @@ body.blog-page .page-header{
     padding-bottom: 120px;
 
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("../img/vert.png") center center no-repeat;
+                url("../img/vert.webp") center center no-repeat;
 
     background-size: cover;
 }
@@ -1340,7 +1340,7 @@ iframe {
     overflow-y: auto;
   }
 
-  /* 3) Le dropdown dans le menu mobile (PAGES) */
+  /* 3) Le dropdown dans le menu mobile (Expertise) */
   .navbar .dropdown-menu{
     background: rgba(255,255,255,0.06) !important;
     border: 1px solid rgba(255,255,255,0.10) !important;

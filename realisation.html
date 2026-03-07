@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>Réalisations - Eden 3D</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Réalisations – Eden 3D Québec | Projets aménagement extérieur Montréal, Rive-Sud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="réalisations aménagement extérieur, projets paysagers Montréal, galerie Eden 3D Québec, pavé uni, terrasse, piscine Rive-Sud">
+    <meta name="description" content="Découvrez nos réalisations d'aménagement extérieur : projets pavé uni, terrasses, piscines et pool house dans le Grand Montréal et la Rive-Sud.">
 
     <!-- Favicon -->
     <link href="img/eden.webp" rel="icon">
@@ -39,15 +39,15 @@
     <div id="spinner"
         class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Chargement...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5" role="navigation" aria-label="Navigation principale">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo2.webp" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
@@ -100,53 +100,52 @@
 
 
     <!-- Start -->
-    <div class="container-fluid py-5 bg-secondary cities-background">
+    <section class="container-fluid py-5 bg-secondary cities-background" aria-labelledby="realisations-heading">
         <div class="text-center">
             <div class="title wow fadeInUp" data-wow-delay="0.1s">
                 <div class="title-center">
-                    <h5>création</h5>
-                    <h1>Nos Derniers Projets</h1>
+                    <p class="h5">création</p>
+                    <h2 id="realisations-heading" class="h1">Nos Derniers Projets</h2>
                 </div>
                 <p class="fs-5 mb-5 wow fadeInUp" style="max-width:900px; margin:0 auto;" data-wow-delay="0.2s">
                     Nous desservons l’ensemble du Grand Montréal, incluant l’île de Montréal, l’Ouest-de-l’Île,
                      la Rive-Sud (Longueuil, Brossard, Boucherville, Saint-Bruno, Candiac et les environs) 
                      ainsi que la Rive-Nord (Laval, Terrebonne, Repentigny, Blainville et les environs).</p>
+
             </div>
 
         </div>
-        <div class="gallery-container mb-4 wow fadeInUp data-wow-delay="0.6s">
+        <div class="gallery-container mb-4 wow fadeInUp" data-wow-delay="0.6s">
             <div class="main-image">
             <!-- Flèche gauche -->
-    <button class="arrow left" onclick="prevImage()">&#10094;</button>
+    <button class="arrow left" onclick="prevImage()" aria-label="Image précédente">&#10094;</button>
             <!-- Image principale -->
-              <img id="currentImage" src="img/img1.webp" alt="l'image actuelle de la realisation d'un projet d'aménagement extérieur">
+              <img id="currentImage" src="img/img1.webp" alt="Projet d'aménagement extérieur réalisé par Eden 3D Québec – galerie">
              <!-- Flèche droite -->
-    <button class="arrow right" onclick="nextImage()">&#10095;</button>
+    <button class="arrow right" onclick="nextImage()" aria-label="Image suivante">&#10095;</button>
             </div>
           
             <!-- Miniatures -->
             <div class="thumbnails">
-              <img src="img/img1.webp" onclick="changeImage(this)">
-              <img src="img/img3.webp" onclick="changeImage(this)">
-              <img src="img/img4.webp" onclick="changeImage(this)">
-              <img src="img/img5.webp" onclick="changeImage(this)">
-              <img src="img/img6.webp" onclick="changeImage(this)">
-              <img src="img/img7.webp" onclick="changeImage(this)">
-              <img src="img/img8.webp" onclick="changeImage(this)">
+              <img src="img/img1.webp" alt="Réalisation aménagement 1" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img3.webp" alt="Réalisation aménagement 2" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img4.webp" alt="Réalisation aménagement 3" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img5.webp" alt="Réalisation aménagement 4" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img6.webp" alt="Réalisation aménagement 5" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img7.webp" alt="Réalisation aménagement 6" loading="lazy" onclick="changeImage(this)">
+              <img src="img/img8.webp" alt="Réalisation aménagement 7" loading="lazy" onclick="changeImage(this)">
             </div>
           
           </div>
-          
-    </div>
-    
-
+    </section>
+    </main>
 
 <!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+<footer class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center py-5">
 
         <a href="index.html">
-            <img src="img/logo2.webp" alt="Eden 3D Logo" class="footer-logo mb-3">
+            <img src="img/logo2.webp" alt="Eden 3D Québec Logo" class="footer-logo mb-3">
 
         </a>
         <div class="d-flex justify-content-center mb-4 footer-social">
@@ -160,14 +159,10 @@
           
             
 
-        <p>&copy; <a class="border-bottom" href="#">Eden 3D</a>, Tous droits réservés.</p>
-
-
+        <p>&copy; <a class="border-bottom" href="index.html">Eden 3D Québec</a>, Tous droits réservés.</p>
     </div>
-</div>
+</footer>
 <!-- Footer End -->
-
-    <!-- Footer End -->
 
 
     <!-- Back to Top -->

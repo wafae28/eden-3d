@@ -351,6 +351,44 @@ a.back-to-top.btn {
     border-bottom: 1px solid var(--bs-white);
 }
 
+/* SEO: restore original look for semantic headings (p.h5 = label, h2.h1 = section title) */
+.title .title-left p.h5,
+.title .title-center p.h5,
+.title .title-right p.h5 {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.title .title-left p.h5::after,
+.title .title-center p.h5::before,
+.title .title-center p.h5::after,
+.title .title-right p.h5::before {
+    position: absolute;
+    content: "";
+    width: 500%;
+    height: 0;
+    top: 9px;
+    border-bottom: 1px solid var(--bs-white);
+}
+
+.title .title-left p.h5::after,
+.title .title-center p.h5::after {
+    left: calc(100% + 15px);
+}
+
+.title .title-right p.h5::before,
+.title .title-center p.h5::before {
+    right: calc(100% + 15px);
+}
+
+.title .title-left h2.h1,
+.title .title-center h2.h1,
+.title .title-right h2.h1 {
+    border-bottom: 1px solid var(--bs-white);
+}
+
 
 /*** Service ***/
 .service-item {
@@ -832,6 +870,28 @@ a.back-to-top.btn {
 
 .blog-section .title h5 {
   color: #111; /* petit titre vert doux */
+}
+
+/* SEO: same styles for semantic headings in blog section */
+.blog-section .title .title-left p.h5::after,
+.blog-section .title .title-center p.h5::before,
+.blog-section .title .title-center p.h5::after,
+.blog-section .title .title-right p.h5::before {
+  border-bottom: 1px solid #111;
+}
+
+.blog-section .title .title-left h2.h1,
+.blog-section .title .title-center h2.h1,
+.blog-section .title .title-right h2.h1 {
+  border-bottom: 1px solid #111;
+}
+
+.blog-section .title h2.h1 {
+  color: #111;
+}
+
+.blog-section .title p.h5 {
+  color: #111;
 }
 /* ===== BLOG ONLY: force override ===== */
 body.blog-page .page-header{

@@ -51,3 +51,37 @@
     
 })(jQuery);
 
+// Gestion du formulaire de soumission
+document.addEventListener('DOMContentLoaded', function() {
+    // Vérifier si on arrive avec le paramètre success=true
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        // Afficher le message de succès
+        const successMessage = document.getElementById('successMessage');
+        if (successMessage) {
+            successMessage.style.display = 'block';
+            // Scroll vers le formulaire
+            document.getElementById('soumission').scrollIntoView({ behavior: 'smooth' });
+            
+            // Masquer le message après 5 secondes
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                // Nettoyer l'URL sans recharger la page
+                window.history.replaceState({}, document.title, window.location.pathname + '#soumission');
+            }, 5000);
+        }
+    }
+    
+    // Gestion de l'envoi du formulaire avec effet loading
+    const form = document.getElementById('projectSubmissionForm');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            const submitBtn = form.querySelector('.btn-submit');
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            
+            // Le formulaire sera soumis normalement vers Formspree
+            // Le loading s'arrêtera après la redirection
+        });
+    }
+});

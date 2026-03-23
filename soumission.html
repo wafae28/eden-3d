@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Soumission – Eden 3D Québec</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="img/eden.webp" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner -->
+<div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;">
+        <span class="sr-only">Chargement...</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo2.webp" alt="ÉDEN 3D QUÉBEC" width="120">
+            </a>
+        </div>
+
+        <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="realisation.html" class="nav-item nav-link">Réalisations</a>
+                <a href="processus.html" class="nav-item nav-link">Processus</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Expertise</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html" class="dropdown-item">Nos Services</a>
+                        <a href="blog.html" class="dropdown-item">Blog</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+
+            <div class="d-none d-lg-flex">
+                <a href="soumission.html" class="btn btn-soumission active">
+                    SOUMISSION
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="page-header pb-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-uppercase mb-3">Soumission</h1>
+            <p class="text-white">Obtenez une estimation gratuite en moins de 24h</p>
+        </div>
+    </div>
+</header>
+
+<!-- FORMULAIRE -->
+<section class="container py-5">
+
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            <div class="text-center mb-5">
+                <h2>Parlez-nous de votre projet</h2>
+                <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement.</p>
+            </div>
+
+            <form action="https://formspree.io/f/maqprobp" method="POST">
+
+                <!-- Infos -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <input type="text" name="nom" class="form-control" placeholder="Nom" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" name="email" class="form-control" placeholder="Courriel" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="tel" name="telephone" class="form-control" placeholder="Téléphone" required>
+                    </div>
+                </div>
+
+                <!-- Projet -->
+                <h5>Type de projet</h5>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label><input type="checkbox" name="projet[]" value="Aménagement paysager"> Aménagement paysager</label><br>
+                        <label><input type="checkbox" name="projet[]" value="Pavé uni"> Pavé uni / entrée</label><br>
+                        <label><input type="checkbox" name="projet[]" value="Terrasse"> Terrasse / patio</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label><input type="checkbox" name="projet[]" value="Clôture"> Clôture</label><br>
+                        <label><input type="checkbox" name="projet[]" value="Clé en main"> Projet clé en main</label><br>
+                        <label><input type="checkbox" name="projet[]" value="Autres"> Autres</label>
+                    </div>
+                </div>
+
+                <!-- Délais -->
+                <h5>Délais</h5>
+                <div class="mb-4">
+                    <label><input type="checkbox" name="delai[]" value="Rapide"> Le plus rapidement possible</label><br>
+                    <label><input type="checkbox" name="delai[]" value="0-3 mois"> 0 à 3 mois</label><br>
+                    <label><input type="checkbox" name="delai[]" value="3-6 mois"> 3 à 6 mois</label><br>
+                    <label><input type="checkbox" name="delai[]" value="Plus tard"> Plus tard</label>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-4">
+                    <textarea name="description" class="form-control" rows="5" placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <!-- Bouton -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-soumission">
+                        Envoyer la demande
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="container-fluid bg-dark text-light py-5 text-center">
+    <a href="index.html">
+        <img src="img/logo2.webp" alt="Eden 3D Québec" class="mb-3" width="120">
+    </a>
+    <p>&copy; Eden 3D Québec</p>
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

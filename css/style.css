@@ -1472,3 +1472,231 @@ iframe {
 body.blog-page .navbar{
   background: rgba(0,0,0,0.92) !important;
 }
+
+/* ========================================
+   Formulaire de soumission de projet
+   ======================================== */
+
+   .soumission-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.soumission-section .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+}
+
+.soumission-section .section-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #e67e22;
+}
+
+.soumission-section .section-title p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.soumission-form-wrapper {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.soumission-form-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-left: 4px solid #e67e22;
+    padding-left: 15px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group .required {
+    color: #e74c3c;
+}
+
+.form-control {
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 0 0.2rem rgba(230,126,34,0.25);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Checkbox styles */
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #e67e22;
+}
+
+.checkbox-item label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: normal;
+    color: #555;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+/* Submit button */
+.btn-submit {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(230,126,34,0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230,126,34,0.4);
+    background: linear-gradient(135deg, #d35400 0%, #e67e22 100%);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Success message */
+#successMessage {
+    border-left: 4px solid #27ae60;
+    background-color: #d5f4e6;
+    color: #2c3e50;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: none;
+    animation: fadeInUp 0.5s ease;
+}
+
+#successMessage i {
+    color: #27ae60;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .soumission-section {
+        padding: 50px 0;
+    }
+    
+    .soumission-section .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .soumission-form-wrapper {
+        padding: 25px;
+    }
+    
+    .soumission-form-wrapper h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn-submit {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .checkbox-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* Loading state */
+.btn-submit.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.btn-submit.loading:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

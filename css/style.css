@@ -1860,11 +1860,20 @@ textarea.form-control {
   }
 }
 @media (max-width: 575.98px) {
+    #header-carousel .carousel-item {
+    min-height: 92svh !important;
+  }
+
+  .carousel-caption {
+    padding: 72px 16px 24px !important;
+  }
+
   .container,
   .container-fluid {
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
+  
 
   .navbar {
     position: fixed !important;
@@ -1888,15 +1897,23 @@ textarea.form-control {
   }
 
   .logo img {
-    width: 150px !important;
+    width: 250px !important;
     height: auto !important;
   }
 
   .navbar-collapse {
-    margin-top: 10px !important;
+    position: fixed !important;
+    top: 87gitpx !important;
+    right: 0 !important;
+    width: 70% !important;
+    height: calc(100vh - 78px) !important;
+    margin-top: 0 !important;
     padding: 14px !important;
-    border-radius: 20px !important;
+    border-radius: 20px 0 0 20px !important;
     background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.35) !important;
+    overflow-y: auto !important;
+    z-index: 9998 !important;
   }
 
   .navbar-toggler {
@@ -1938,6 +1955,7 @@ textarea.form-control {
   body {
     padding-top: 78px !important;
   }
+  
 
   .carousel-caption {
     padding: 92px 16px 34px !important;

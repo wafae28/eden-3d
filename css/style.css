@@ -1903,7 +1903,7 @@ textarea.form-control {
 
   .navbar-collapse {
     position: fixed !important;
-    top: 87gitpx !important;
+    top: 87px !important;
     right: 0 !important;
     width: 70% !important;
     height: calc(100vh - 78px) !important;

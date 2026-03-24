@@ -14,13 +14,15 @@
 
 
     // Sticky Navbar
-    $(window).scroll(function () {
+   $(window).scroll(function () {
+    if (window.innerWidth > 991.98) {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('position-fixed bg-dark shadow-sm');
         } else {
             $('.navbar').removeClass('position-fixed bg-dark shadow-sm');
         }
-    });
+    }
+});
     
     
     // Back to top button

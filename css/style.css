@@ -910,8 +910,8 @@ body.blog-page .page-header{
 
   .blog {
     position: relative;
-    padding-top: 200px;
-    padding-bottom: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
                 url("../img/vert.webp") center center no-repeat;
@@ -1664,8 +1664,8 @@ textarea.form-control {
 
   /* ================= HEADERS AUTRES PAGES ================= */
   .page-header {
-    padding-top: 126px !important;
-    padding-bottom: 56px !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
     min-height: 300px;
   }
 
@@ -1910,7 +1910,7 @@ textarea.form-control {
     margin-top: 0 !important;
     padding: 14px !important;
     border-radius: 20px 0 0 20px !important;
-    background: rgba(0, 0, 0, 0.95) !important;
+    background: rgba(20, 20, 20, 0.95) !important;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.35) !important;
     overflow-y: auto !important;
     z-index: 9998 !important;
@@ -2059,5 +2059,37 @@ textarea.form-control {
 
   .arrow.right {
     right: 8px !important;
+  }
+}
+/* Bouton soumission visible aussi dans le menu mobile */
+.mobile-soumission-wrap {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .mobile-soumission-wrap {
+    display: flex !important;
+    margin-left: 20px;
+  }
+
+  .mobile-soumission-wrap .btn-soumission {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mobile-soumission-wrap {
+    display: block !important;
+    width: 100%;
+    margin-top: 12px;
+    padding: 0 22px;
+  }
+
+  .mobile-soumission-wrap .btn-soumission {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -1609,8 +1609,51 @@ textarea.form-control {
   }
 
   /* ================= PAGE PRINCIPALE / HERO ================= */
+@media (max-width: 575.98px) {
+  #header-carousel,
+  #header-carousel .carousel-inner,
+  #header-carousel .carousel-item,
+  #header-carousel .carousel-caption {
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
   #header-carousel .carousel-item {
-    min-height: 100svh;
+    position: relative !important;
+    min-height: 92svh !important;
+  }
+
+  #header-carousel .carousel-item img,
+  #header-carousel .carousel-item picture img {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .hero-zoom {
+    animation: heroCinematicMobile 7s ease-in-out infinite alternate !important;
+    will-change: transform;
+    transform-origin: center center !important;
+  }
+
+  @keyframes heroCinematicMobile {
+    0% {
+      transform: scale(1.22) translate(0, 0);
+    }
+    100% {
+      transform: scale(1.30) translate(-10px, -6px);
+    }
+  }
+}
+
+  #header-carousel .carousel-item {
+    min-height: 100svh ;
   }
 
   #header-carousel .carousel-item img,
@@ -1861,7 +1904,7 @@ textarea.form-control {
 }
 @media (max-width: 575.98px) {
     #header-carousel .carousel-item {
-    min-height: 92svh !important;
+    min-height: 97svh !important;
   }
 
   .carousel-caption {
@@ -1870,8 +1913,8 @@ textarea.form-control {
 
   .container,
   .container-fluid {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   
 
@@ -1909,8 +1952,8 @@ textarea.form-control {
     height: calc(100vh - 78px) !important;
     margin-top: 0 !important;
     padding: 14px !important;
-    border-radius: 20px 0 0 20px !important;
-    background: rgba(20, 20, 20, 0.95) !important;
+    border-radius: 0px 0 0 0px !important;
+    background: #000 !important;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.35) !important;
     overflow-y: auto !important;
     z-index: 9998 !important;
@@ -1925,7 +1968,7 @@ textarea.form-control {
     justify-content: center !important;
     border-radius: 16px !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    background: rgba(255, 255, 255, 0.06) !important;
+    background: rgba(6, 6, 6, 0.06) !important;
     box-shadow: none !important;
      margin-right: 10px !important;
   }

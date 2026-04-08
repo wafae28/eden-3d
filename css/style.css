@@ -2136,3 +2136,17 @@ textarea.form-control {
     align-items: center;
   }
 }
+.consultation-highlight {
+  color: #9BC7A5;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0 0 12px rgba(155, 199, 165, 0.35);
+  transition: all 0.3s ease;
+}
+
+.consultation-highlight:hover {
+  color: #0f0f0f;
+  background: #9BC7A5;
+  padding: 2px 8px;
+  border-radius: 0;
+}

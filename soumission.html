@@ -113,12 +113,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement.</p>
             </div>
 
-            <form id="projectSubmissionForm"
-            action="https://formspree.io/f/maqprobp" method="POST"
-            enctype="multipart/form-data">
+             <form id="projectSubmissionForm"
+               action="https://formspree.io/f/maqprobp"
+               method="POST"
+               enctype="multipart/form-data">
 
                 <!-- Champ caché pour redirection -->
-                <input type="hidden" name="_redirect" value="https://eden3d.ca/contact.html?success=true#soumission">
                 <input type="hidden" name="_subject" value="Nouvelle soumission de projet - Eden3D">
 
                 <!-- Infos client -->
@@ -250,6 +250,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Votre script personnalisé pour le formulaire -->
 <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("projectSubmissionForm");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "merci.html";
+      } else {
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      }
+    } catch (error) {
+      alert("Une erreur est survenue. Veuillez réessayer.");
+    }
+  });
+});
+</script>
 
 </body>
 </html>

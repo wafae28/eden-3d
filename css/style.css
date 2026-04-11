@@ -1694,7 +1694,7 @@ textarea.form-control {
     font-size: 15px !important;
     line-height: 1.5 !important;
     max-width: 300px !important;
-    margin: 0 auto 4px !important;
+    margin: 0 auto -100px !important;
   }
 
   /* ================= HEADERS AUTRES PAGES ================= */

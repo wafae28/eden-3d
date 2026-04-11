@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-    
     <meta charset="utf-8">
     <title>Consultation – Eden 3D Québec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,14 +39,14 @@
 
 <!-- HEADER -->
 <header class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-dark px-lg-5" role="navigation" aria-label="Navigation principale">
         <div class="logo">
             <a href="index.html">
-                <img src="img/logo2.webp" alt="ÉDEN 3D QUÉBEC" width="120">
+                <img src="img/logo2.webp" alt="ÉDEN 3D QUÉBEC" width="120" height="120">
             </a>
         </div>
 
-        <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -61,7 +60,7 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Expertise</a>
                     <div class="dropdown-menu m-0">
                         <a href="team.html" class="dropdown-item">Nos Services</a>
-                        <a href="blog.html" class="dropdown-item">Blog</a>
+                        <a href="blog.html" class="dropdown-item">Blog et Actualités</a>
                     </div>
                 </div>
 
@@ -69,170 +68,164 @@
             </div>
 
             <div class="mobile-soumission-wrap">
-                <a href="soumission.html" class="btn btn-soumission active">
+                <a href="soumission.html" class="btn btn-soumission">
                     CONSULTATION
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
     <div class="page-header pb-5">
         <div class="container text-center py-5">
-            <h1 class="display-4 text-uppercase mb-3">CONSULTATION</h1>
-            <p class="text-white">Obtenez une estimation gratuite en moins de 24h</p>
+            <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Consultation</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Consultation</li>
+                </ol>
+            </nav>
         </div>
     </div>
 </header>
 
 <!-- FORMULAIRE -->
-<section id="soumission" class="container py-5">
+<section id="soumission" class="soumission-section container-fluid py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
 
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
+                <div class="section-title text-center mb-5">
+                    <h2>Parlez-nous de votre projet</h2>
+                    <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement.</p>
+                </div>
 
-            <div class="text-center mb-5">
-                <h2>Parlez-nous de votre projet</h2>
-                <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement.</p>
+                <div class="soumission-form-wrapper">
+                    <form id="projectSubmissionForm"
+                          action="https://formspree.io/f/maqprobp"
+                          method="POST"
+                          enctype="multipart/form-data">
+
+                        <input type="hidden" name="_subject" value="Nouvelle soumission de projet - Eden3D">
+
+                        <!-- Infos client -->
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <input type="text" name="nom" class="form-control" placeholder="Nom complet" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" name="email" class="form-control" placeholder="Courriel" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="tel" name="telephone" class="form-control" placeholder="Téléphone" required>
+                            </div>
+                        </div>
+
+                        <!-- Type de projet -->
+                        <h5 class="mb-3">Type de projet</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Plan d'Aménagement paysager" id="projet1">
+                                    <label for="projet1">Plan d'Aménagement paysager</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Pavé uni / entrée" id="projet2">
+                                    <label for="projet2">Pavé uni / entrée</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Terrasse / patio" id="projet3">
+                                    <label for="projet3">Terrasse / patio</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Clôture" id="projet4">
+                                    <label for="projet4">Clôture</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Projet clé en main" id="projet5">
+                                    <label for="projet5">Projet clé en main</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="projet[]" value="Autres" id="projet6">
+                                    <label for="projet6">Autres</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Délais -->
+                        <h5 class="mb-3">Délais du projet</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="delai[]" value="Le plus rapidement possible" id="delai1">
+                                    <label for="delai1">Le plus rapidement possible</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="delai[]" value="Dans les 0 à 3 mois" id="delai2">
+                                    <label for="delai2">Dans les 0 à 3 mois</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="delai[]" value="Dans 3 à 6 mois" id="delai3">
+                                    <label for="delai3">Dans 3 à 6 mois</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="delai[]" value="Plus tard (planification)" id="delai4">
+                                    <label for="delai4">Plus tard (planification)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-4">
+                            <textarea name="description" class="form-control" rows="5" placeholder="Décrivez votre projet en détail... (contraintes, idées spécifiques)"></textarea>
+                        </div>
+
+                        <!-- Bouton -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">
+                                Envoyer la demande
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Merci pour votre demande !</strong><br>
+                        Notre équipe vous contactera sous 24h pour discuter de votre projet.
+                    </div>
+                </div>
+
             </div>
-
-             <form id="projectSubmissionForm"
-               action="https://formspree.io/f/maqprobp"
-               method="POST"
-               enctype="multipart/form-data">
-
-                <!-- Champ caché pour redirection -->
-                <input type="hidden" name="_subject" value="Nouvelle soumission de projet - Eden3D">
-
-                <!-- Infos client -->
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <input type="text" name="nom" class="form-control" placeholder="Nom complet" required>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="email" name="email" class="form-control" placeholder="Courriel" required>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="tel" name="telephone" class="form-control" placeholder="Téléphone" required>
-                    </div>
-                </div>
-
-                <!-- Type de projet -->
-                <h5>Type de projet</h5>
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Plan d'Aménagement paysager" id="projet1">
-                            <label for="projet1">Plan d'Aménagement paysager</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Pavé uni / entrée" id="projet2">
-                            <label for="projet2">Pavé uni / entrée</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Terrasse / patio" id="projet3">
-                            <label for="projet3">Terrasse / patio</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Clôture" id="projet4">
-                            <label for="projet4">Clôture</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Projet clé en main" id="projet5">
-                            <label for="projet5">Projet clé en main</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="projet[]" value="Autres" id="projet6">
-                            <label for="projet6">Autres</label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Délais du projet -->
-                <h5>Délais du projet</h5>
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="delai[]" value="Le plus rapidement possible" id="delai1">
-                            <label for="delai1">Le plus rapidement possible</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="delai[]" value="Dans les 0 à 3 mois" id="delai2">
-                            <label for="delai2">Dans les 0 à 3 mois</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="delai[]" value="Dans 3 à 6 mois" id="delai3">
-                            <label for="delai3">Dans 3 à 6 mois</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="delai[]" value="Plus tard (planification)" id="delai4">
-                            <label for="delai4">Plus tard (planification)</label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Description du projet -->
-                <div class="mb-4">
-                    <textarea name="description" class="form-control" rows="5" placeholder="Décrivez votre projet en détail... (contraintes, idées spécifiques)"></textarea>
-                </div>
-                
-                
-           
-                <!-- Bouton -->
-                <div class="text-center">
-                    <button type="submit" class="btn btn-soumission">
-                        Envoyer la demande
-                    </button>
-                </div>
-
-            </form>
-
-            <!-- Message de confirmation -->
-            <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
-                <i class="fas fa-check-circle"></i> 
-                <strong>Merci pour votre demande !</strong><br>
-                Notre équipe vous contactera sous 24h pour discuter de votre projet.
-            </div>
-
         </div>
     </div>
-
 </section>
 
 <!-- FOOTER -->
-    <footer class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+<footer class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center py-5">
-
         <a href="index.html">
             <img src="img/logo2.webp" alt="Eden 3D Québec Logo" class="footer-logo mb-3">
-
         </a>
+
         <div class="d-flex justify-content-center mb-4 footer-social">
             <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.facebook.com/p/Eden-3D-Québec-100064279023862/?locale=fr_FR"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.youtube.com/@eden3dquebec943">
-                <i class="fab fa-youtube"></i>
-            </a>
-            
+            <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.youtube.com/@eden3dquebec943"><i class="fab fa-youtube"></i></a>
             <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/eden3dquebec/?hl=en"><i class="fab fa-instagram"></i></a>
-          </div>
-          
-            
+        </div>
 
-        <p>&copy; <a class="border-bottom" href= "#" >Éden 3D Québec</a>, Tous droits réservés.</p>
+        <p>&copy; <a class="border-bottom" href="#">Éden 3D Québec</a>, Tous droits réservés.</p>
     </div>
-    </footer>
+</footer>
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
-
-<!-- Votre script personnalisé pour le formulaire -->
 <script src="script.js"></script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("projectSubmissionForm");
@@ -264,6 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 <!-- Cookies -->
 <script src="js/cookies.js"></script>
 

@@ -2150,3 +2150,108 @@ textarea.form-control {
   padding: 2px 8px;
   border-radius: 0;
 }
+
+/* cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.cookie-content {
+  pointer-events: all;
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  border: 1px solid rgba(185, 233, 205, 0.15);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* texte */
+.cookie-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* lien */
+.cookie-content a {
+  color: rgba(185, 233, 205, 0.95);
+  text-decoration: none;
+}
+
+.cookie-content a:hover {
+  text-decoration: underline;
+}
+
+/* boutons */
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* base bouton */
+.cookie-buttons button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* bouton accepter (vert Eden3D) */
+.cookie-buttons button:first-child {
+  background: rgba(185, 233, 205, 0.92);
+  color: #111;
+  border: 1px solid rgba(185, 233, 205, 1);
+}
+
+.cookie-buttons button:first-child:hover {
+  background: rgba(185, 233, 205, 1);
+  transform: translateY(-1px);
+}
+
+/* bouton refuser */
+.cookie-buttons button:last-child {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.cookie-buttons button:last-child:hover {
+  border-color: rgba(185, 233, 205, 0.8);
+  color: rgba(185, 233, 205, 0.95);
+}
+@media (max-width: 768px) {
+  .cookie-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+  }
+
+  .cookie-buttons {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .cookie-buttons button {
+      width: 100%;
+  }
+}

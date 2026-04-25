@@ -1,12 +1,6 @@
 (function ($) {
     "use strict";
 
-    // Spinner
-    window.addEventListener('load', function () {
-        if ($('#spinner').length > 0) {
-            $('#spinner').removeClass('show');
-        }
-    });
     
     
     // Initiate the wowjs

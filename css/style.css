@@ -2238,3 +2238,7 @@ textarea.form-control {
       width: 100%;
   }
 }
+.soumission-form-wrapper h5,
+.checkbox-item label {
+  color: #000 !important;
+}
